@@ -82,7 +82,7 @@ body {
 }
 
 .header-nav {
-  padding-top: 32px;
+  padding: 32px 0 32px 0;
 }
 
 .navigation {
@@ -166,8 +166,7 @@ body {
 .hero {
   text-align: center;
   background-color: var(--graphite);
-  padding: 200px 0;
-  margin-top: 25px;
+  padding: 200px 0 200px 0;
 }
 
 .hero-title {
@@ -207,17 +206,21 @@ body {
 
 .feature-list {
   display: flex;
-  flex-basis: 67px;
+  padding-left: 30px;
 }
 
-.feature-list:not(:first-child) {
-  margin-left: var(--item-set-gap);
+.feature-item {
+  max-width: 270px;
+}
+
+.feature-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .feature-title {
   color: var(--black-text);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -353,7 +356,6 @@ body {
 /* Portfolio */
 .page-header-portfolio {
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 32px;
 }
 
 .visual-hidden {
